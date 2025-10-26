@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 2: jQuery Effects</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .demo-section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    #demo-paragraph {
+      background-color: #e3f2fd;
+      padding: 15px;
+      border-radius: 6px;
+      margin: 15px 0;
+    }
+    
+    #demo-image {
+      max-width: 300px;
+      border-radius: 8px;
+      margin: 15px 0;
+      display: none;
+    }
+    
+    .collapsible-panel {
+      background-color: #fff3e0;
+      padding: 20px;
+      border: 2px solid #ff9800;
+      border-radius: 8px;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Part 1</a>
+    <a href="Part2.html" class="active">Part 2</a>
+    <a href="Part3.html">Part 3</a>
+    <a href="Part4.html">Part 4</a>
+    <a href="Part5.html">Part 5</a>
+  </nav>
+
+  <h1>Part 2: jQuery Effects</h1>
+
+  <div class="demo-section">
+    <h2>Task 2: Visibility Methods</h2>
+    <p id="demo-paragraph">
+      This is a demonstration paragraph. You can hide, show, or toggle its visibility using jQuery effects!
+    </p>
+    <button id="btn-hide">Hide</button>
+    <button id="btn-show">Show</button>
+    <button id="btn-toggle">Toggle</button>
+  </div>
+
+  <div class="demo-section">
+    <h2>Task 3: Fade Methods</h2>
+    <img id="demo-image" src="https://cdn-images-1.medium.com/v2/resize:fill:1600:480/gravity:fp:0.5:0.4/1*onkq3McNKR3nldt-I-7jcQ.jpeg" alt="Demo Image">
+    <br>
+    <button id="btn-fadein">Fade In</button>
+    <button id="btn-fadeout">Fade Out</button>
+    <button id="btn-fadetoggle">Fade Toggle</button>
+    <button id="btn-fadeto">Fade To 50%</button>
+  </div>
+
+  <div class="demo-section">
+    <h2>Task 4: Slide Methods</h2>
+    <button id="btn-slide">Toggle Panel</button>
+    <button id="btn-slidedown">Slide Down</button>
+    <button id="btn-slideup">Slide Up</button>
+    
+    <div class="collapsible-panel">
+      <h3>Collapsible Panel Content</h3>
+      <p>This panel slides up and down using jQuery slide effects. You can control it with the buttons above!</p>
+      <ul>
+        <li>Slide effects create smooth animations</li>
+        <li>They're perfect for collapsible content</li>
+        <li>Very easy to implement with jQuery</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="part2.js"></script>
+</body>
+</html>

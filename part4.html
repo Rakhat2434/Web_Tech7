@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 4: Animations</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <nav>
+    <a href="index.html">Part 1</a>
+    <a href="Part2.html">Part 2</a>
+    <a href="Part3.html">Part 3</a>
+    <a href="Part4.html" class="active">Part 4</a>
+    <a href="Part5.html">Part 5</a>
+  </nav>
+
+  <h1>Part 4: Animations</h1>
+
+  <div class="demo-section">
+    <h2>Task 8: Basic Animation</h2>
+    <p>Animate size and position of the box</p>
+    <div class="animation-container">
+      <div class="box" id="box1"></div>
+    </div>
+    <button id="btn-animate-basic">Animate Box</button>
+    <button id="btn-reset-basic">Reset</button>
+  </div>
+
+  <div class="demo-section">
+    <h2>Task 9: Sequential Animations</h2>
+    <p>Box moves in sequence: right → down → shrink → return to original</p>
+    <div class="animation-container">
+      <div class="box" id="box2"></div>
+    </div>
+    <button id="btn-animate-sequence">Start Sequence</button>
+    <button id="btn-reset-sequence">Reset</button>
+  </div>
+
+  <div class="demo-section">
+    <h2>Task 10: Combined Animation</h2>
+    <p>Combine opacity, size, and movement in one animation</p>
+    <div class="animation-container">
+      <div class="box" id="box3"></div>
+    </div>
+    <button id="btn-animate-combined">Animate Combined</button>
+    <button id="btn-reset-combined">Reset</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="part4.js"></script>
+</body>
+</html>

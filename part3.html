@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3: DOM Manipulation</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <nav>
+    <a href="index.html">Part 1</a>
+    <a href="Part2.html">Part 2</a>
+    <a href="Part3.html" class="active">Part 3</a>
+    <a href="Part4.html">Part 4</a>
+    <a href="Part5.html">Part 5</a>
+  </nav>
+
+  <h1>Part 3: DOM Manipulation with jQuery</h1>
+
+  <div class="demo-section">
+    <h2>Task 5: Add & Remove Elements</h2>
+    <ul id="item-list">
+      <li>Default Item 1</li>
+      <li>Default Item 2</li>
+      <li>Default Item 3</li>
+    </ul>
+    <button id="btn-append">Add Item (Append)</button>
+    <button id="btn-prepend">Add Item (Prepend)</button>
+    <button id="btn-remove">Remove Last Item</button>
+  </div>
+
+  <div class="demo-section">
+    <h2>Task 6: Modifying Attributes</h2>
+    <img id="dynamic-image" src="https://via.placeholder.com/300x200/0066cc/ffffff?text=Original+Image" alt="Dynamic Image">
+    <br>
+    <button id="btn-change-image">Change Image Source</button>
+    <button id="btn-reset-image">Reset Image</button>
+    
+    <br><br>
+    <a id="dynamic-link" href="https://jquery.com" target="_blank">Visit jQuery Website</a>
+    <br>
+    <button id="btn-change-link">Change Link to Google</button>
+    <button id="btn-reset-link">Reset Link</button>
+  </div>
+
+  <div class="demo-section">
+    <h2>Task 7: Form Interaction</h2>
+    <form id="user-form">
+      <div class="form-group">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" placeholder="Enter your name">
+      </div>
+      
+      <div class="form-group">
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" placeholder="Enter your email">
+      </div>
+    </form>
+    
+    <div id="live-output">
+      <p><strong>Live Output:</strong></p>
+      <p id="name-display">Name: (not entered yet)</p>
+      <p id="email-display">Email: (not entered yet)</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="part3.js"></script>
+</body>
+</html>

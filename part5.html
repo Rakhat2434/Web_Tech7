@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 5: Bouncing Ball</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .demo-section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    #ball-container {
+      position: relative;
+      height: 400px;
+      background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+      border-radius: 8px;
+      margin: 20px 0;
+      overflow: hidden;
+      border: 3px solid #0066cc;
+    }
+    
+    #ball {
+      width: 60px;
+      height: 60px;
+      background: radial-gradient(circle at 30% 30%, #ff4081, #c51162);
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    
+    .controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    
+    .info-panel {
+      background-color: #f3e5f5;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+    
+    .info-panel h3 {
+      margin-top: 0;
+      color: #6a1b9a;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Part 1</a>
+    <a href="Part2.html">Part 2</a>
+    <a href="Part3.html">Part 3</a>
+    <a href="Part4.html">Part 4</a>
+    <a href="Part5.html" class="active">Part 5</a>
+  </nav>
+
+  <h1>Part 5: Mini Project - Bouncing Ball</h1>
+
+  <div class="demo-section">
+    <h2>Task 11: Interactive Bouncing Ball Animation</h2>
+    <p>Watch the ball move across the screen and bounce back!</p>
+    
+    <div id="ball-container">
+      <div id="ball"></div>
+    </div>
+    
+    <div class="controls">
+      <button id="btn-start">Start Animation</button>
+      <button id="btn-stop">Stop</button>
+      <button id="btn-reset">Reset Ball</button>
+      <button id="btn-bounce-vertical">Bounce Vertical</button>
+      <button id="btn-bounce-diagonal">Bounce Diagonal</button>
+      <button id="btn-continuous">Continuous Bounce</button>
+    </div>
+    
+    <div class="info-panel">
+      <h3>Project Features:</h3>
+      <ul>
+        <li><strong>Start Animation:</strong> Ball moves across screen horizontally and bounces back</li>
+        <li><strong>Bounce Vertical:</strong> Ball bounces up and down</li>
+        <li><strong>Bounce Diagonal:</strong> Ball moves diagonally and bounces</li>
+        <li><strong>Continuous Bounce:</strong> Ball keeps bouncing in a loop</li>
+        <li><strong>Stop:</strong> Stops all animations</li>
+        <li><strong>Reset:</strong> Returns ball to starting position</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="part5.js"></script>
+</body>
+</html>
