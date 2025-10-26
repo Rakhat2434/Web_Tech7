@@ -21,20 +21,21 @@ $(document).ready(function() {
   // Task 6: Modifying Attributes - attr()
   let imageToggle = false;
 
+  
   $('#btn-change-image').click(function() {
     if (!imageToggle) {
-      $('#dynamic-image').attr('src', 'https://via.placeholder.com/300x200/ff9800/ffffff?text=Changed+Image');
+      $('#dynamic-image').attr('src', 'https://avatars.mds.yandex.net/i?id=59eb6c673adb53e420917e798635d1b2a1c70a86-2959863-images-thumbs&n=13');
       $('#dynamic-image').attr('alt', 'Changed Image');
       imageToggle = true;
     } else {
-      $('#dynamic-image').attr('src', 'https://via.placeholder.com/300x200/4caf50/ffffff?text=Another+Image');
+      $('#dynamic-image').attr('src', 'https://avatars.mds.yandex.net/i?id=3603f564fc432b15f064309af00b22f727d27655-16497261-images-thumbs&n=13');
       $('#dynamic-image').attr('alt', 'Another Image');
       imageToggle = false;
     }
   });  
   $('#btn-reset-image').click(function() {
     $('#dynamic-image').attr({
-      'src': 'https://via.placeholder.com/300x200/0066cc/ffffff?text=Original+Image',
+      'src': 'https://avatars.mds.yandex.net/i?id=3603f564fc432b15f064309af00b22f727d27655-16497261-images-thumbs&n=13',
       'alt': 'Dynamic Image'
     });
     imageToggle = false;
@@ -66,4 +67,5 @@ $(document).ready(function() {
       $('#email-display').text('Email: (not entered yet)');
     }
   });
+
 });
